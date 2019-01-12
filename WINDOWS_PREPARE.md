@@ -39,12 +39,24 @@ I will use main directory *Projects* for projects in my home directory, but you 
 
     mkdir -p ~/Projects
     cd ~/Projects
-    git clone git@github.com:virtustilus/health-dairy.git
-    cd health-dairy/
+    git clone git@github.com:virtustilus/health-diary.git
+    cd health-diary/
     ls -la
 
 You should see files from this project.
 
 Not it's time to install Visual Studio Code.
 Open [https://code.visualstudio.com/](https://code.visualstudio.com/)
+Download, install and open it.
+At the left icons go to extensions (bottom one).
+
+Install next extensions:
+- Bookmarks
+- Docker
+- PHP Debug
+- PHP IntelliSense
+- Twig Language 2
+
+Now go to top left icon (Explorer) and click "Open Folder" button.
+Find and go inside Health-diary 
 
