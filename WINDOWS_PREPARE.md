@@ -59,7 +59,7 @@ Install next extensions:
 
 Go to settings by CTRL+, and type "PHP". Now turn off the line: "PHP > Suggest:Basic".
 
-Click CTRP+P and type next words: ">display" and open Configure Display Language by click Enter.
+Click CTRL+P and type next words: ">display" and open Configure Display Language by click Enter.
 Now it has to have "en" as default locale set and save it (CTRL+S). Now restart VSCode fully.
 
 Go to top left icon (Explorer) and click "Open Folder" button.
