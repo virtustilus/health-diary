@@ -57,6 +57,26 @@ Install next extensions:
 - PHP IntelliSense
 - Twig Language 2
 
-Now go to top left icon (Explorer) and click "Open Folder" button.
-Find and go inside Health-diary 
+Go to settings by CTRL+, and type "PHP". Now turn off the line: "PHP > Suggest:Basic".
+
+Click CTRP+P and type next words: ">display" and open Configure Display Language by click Enter.
+Now it has to have "en" as default locale set and save it (CTRL+S). Now restart VSCode fully.
+
+Go to top left icon (Explorer) and click "Open Folder" button.
+Find and go inside Health-diary and click "Choose folder".
+Now at the left you should to see this structure:
+
+    - health-diary
+        - LICENSE
+        - README.md
+        - WINDOWS_PREPARE.md
+        ...
+
+Now you can learn your new IDE and project structure. Go back to [README.md](README.md) and start this project.
+
+P.S.
+Don't forget to learn your new IDE.
+To open any file you can use CTRL+P and type some parts of the path to the file. 
+To bookmart some place use CTRL+P and type ">btl", push enter, type some name, enter again.
+When you will need to return to this place, use CTRP+P, ">bli", and choose needed place.
 
