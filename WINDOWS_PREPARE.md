@@ -39,7 +39,7 @@ I will use main directory *Projects* for projects in my home directory, but you 
 
     mkdir -p ~/Projects
     cd ~/Projects
-    git clone https://github.com/virtustilus/health-dairy.git
+    git clone git@github.com:virtustilus/health-dairy.git
     cd health-dairy/
     ls -la
 
