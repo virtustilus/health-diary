@@ -6,11 +6,10 @@ I prepared additional instructions for windows developers beginners:
 [WINDOWS_PREPARE.md](WINDOWS_PREPARE.md)
 
 ## development start
-Please make sure at first that you have nothing on next ports: 80, 9001, 4200, 5432
+Please make sure at first that you have nothing on next ports: 80, 9001, 4200, 5432.
 Use docker-compose to start development server:
 
     docker-compose up
 
 When everything is started, you can open in browser:
 [http://localhost/](http://localhost)
-
