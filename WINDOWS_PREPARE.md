@@ -2,6 +2,7 @@
 Here is the tutorial for my friends, how they can prepare their dev env in Windows.
 It's not must have, but recommended as good start.
 
+## git and ssh keys
 https://git-scm.com/download
 when install: 
 “use git and optional unix tools from the command prompt”
@@ -34,6 +35,7 @@ Now open git-bash again and you can if your key is working correctly:
 It will ask if RSA fingerprint is coorect, answer "yes".
 Then at the end it will show you something like: "Hi virtustilus! You've successfully authenticated, but GitHub does not provide shell access."
 
+## cloning project
 Now let's create your project directory.
 I will use main directory *Projects* for projects in my home directory, but you can use yours own.
 
@@ -45,6 +47,7 @@ I will use main directory *Projects* for projects in my home directory, but you 
 
 You should see files from this project.
 
+## IDE - Visual Studio Code
 Not it's time to install Visual Studio Code.
 Open [https://code.visualstudio.com/](https://code.visualstudio.com/)
 Download, install and open it.
@@ -56,6 +59,7 @@ Install next extensions:
 - PHP Debug
 - PHP IntelliSense
 - Twig Language 2
+- Gitlens
 
 Go to settings by CTRL+, and type "PHP". Now turn off the line: "PHP > Suggest:Basic".
 
@@ -71,6 +75,25 @@ Now at the left you should to see this structure:
         - README.md
         - WINDOWS_PREPARE.md
         ...
+
+
+## Now install Docker.
+
+### For Windows 10 or Enterprise:
+[https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop)
+
+### For previous Windows (like windows 7, windows 8):
+
+Install last VirtualBox and Extension Pack [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
+
+Download and install Docker toolbox:
+[https://docs.docker.com/toolbox/overview/](https://docs.docker.com/toolbox/overview/)
+
+--- PLEASE HELP WITH DESCRIPTION FOR THESE OS, since I don't have win7 ---
+
+
+
+
 
 Now you can learn your new IDE and project structure. Go back to [README.md](README.md) and start this project.
 
