@@ -88,7 +88,9 @@ Now at the left you should to see this structure:
 ### For Windows 10 or Enterprise:
 [https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop)
 
-### For previous Windows (like windows 7, windows 8):
+After installation Docker might ask to enable Hyper-V, allow it to do and it will restart.
+
+### For previous Windows only (like windows 7, windows 8):
 
 Install last VirtualBox and Extension Pack [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
 

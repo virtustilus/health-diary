@@ -1,0 +1,49 @@
+version: 2
+services:
+
+    nginx:
+      build:
+        context: ./docker/nginx
+        dockerfile: Dockerfile
+      depends_on:
+        - php
+        - postgres
+        - nodejs
+      volumes:
+        - ./backend:/var/www/backend:delegated
+        - ./frontend:/var/www/frontend:delegated
+      ports:
+        - "80:80"
+      
+    php:
+      build:
+        context: ./docker/php
+        dockerfile: Dockerfile
+      depends_on:
+        - postgres
+      volumes:
+        - ./backend:/var/www/backend:delegated
+      ports:
+        - "9001:9001"
+
+    nodejs:
+      build:
+        context: ./docker/nodejs
+        dockerfile: Dockerfile
+      volumes:
+        - ./frontend:/var/www/frontend:delegated
+      ports:
+        - "4200:4200"
+
+    postgres:
+      build:
+        context: ./docker/postgres
+        dockerfile: Dockerfile
+      restart: always
+      ports:
+        - "5432:5432"
+      environment:
+        POSTGRES_PASSWORD: root
+
+
+
