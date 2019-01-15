@@ -35,6 +35,11 @@ Now open git-bash again and you can if your key is working correctly:
 It will ask if RSA fingerprint is coorect, answer "yes".
 Then at the end it will show you something like: "Hi virtustilus! You've successfully authenticated, but GitHub does not provide shell access."
 
+Add you name and email like:
+
+    git config --global user.name "Your Name"
+    git config --global user.email "your-email@domain.com"
+
 ## cloning project
 Now let's create your project directory.
 I will use main directory *Projects* for projects in my home directory, but you can use yours own.
@@ -68,6 +73,7 @@ Now it has to have "en" as default locale set and save it (CTRL+S). Now restart 
 
 Go to top left icon (Explorer) and click "Open Folder" button.
 Find and go inside Health-diary and click "Choose folder".
+The path should be like "Disk C: > Users > YOUNAME > Projects > health-diary".
 Now at the left you should to see this structure:
 
     - health-diary
