@@ -13,3 +13,14 @@ Use docker-compose to start development server:
 
 When everything is started, you can open in browser:
 [http://localhost/](http://localhost)
+
+Now you can list your containers:
+
+    docker ps
+
+To connect to some container, for example php:
+
+    docker exec -it health-dairy_php_1 sh -l
+
+If you changed some setting in docker container files, use command `docker-compose up --build` to recreate containers with changes.
+
