@@ -20,7 +20,17 @@ Now you can list your containers:
 
 To connect to some container, for example php:
 
-    docker exec -it health-dairy_php_1 sh -l
+    docker exec -it health-diary_php_1 sh -l
 
-If you changed some setting in docker container files, use command `docker-compose up --build` to recreate containers with changes.
+If you changed some setting in docker-compose settings, use command `docker-compose up --build` to recreate containers with changes.
 
+To open symfony backend, try to open, for example, [http://localhost/admin/](http://localhost/admin/)
+
+All paths that start with /api/, /admin/, /read/, will be processed with symfony backend. 
+Other paths will be returned by angular frontend.
+It's controlled in [docker/nginx/health-diary.conf](docker/nginx/health-diary.conf).
+
+Paths that start with "/read/" are designed for landing pages.
+
+Checkout our wiki to find some tasks and additional useful information:
+[https://github.com/virtustilus/health-diary/wiki/Health-Diary-homepage](https://github.com/virtustilus/health-diary/wiki/Health-Diary-homepage)

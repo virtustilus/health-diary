@@ -4,6 +4,8 @@ RUN npm install -g @angular/cli
 
 RUN apk add --no-cache --update wget git grep
 
+EXPOSE 4200
+
 WORKDIR /var/www/frontend
 
-CMD [ "tail", "-f", "/dev/null" ]
+CMD [ "ng", "serve", "--host", "0.0.0.0", "--disable-host-check" ]
