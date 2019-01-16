@@ -16,6 +16,13 @@ RUN docker-php-ext-install pdo pdo_pgsql
 
 RUN docker-php-ext-install mbstring
 
+RUN apk add --no-cache --update zlib zlib-dev icu icu-dev \
+    && docker-php-ext-configure intl \
+    && docker-php-ext-install intl
+
+RUN apk add --no-cache --update libzip-dev libzip \
+    && docker-php-ext-install zip
+
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 WORKDIR /var/www/backend
