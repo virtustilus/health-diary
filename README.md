@@ -22,6 +22,10 @@ To connect to some container, for example php:
 
     docker exec -it health-diary_php_1 sh -l
 
+Note that on WINDOWS in GitBash command line, you will need to prefix this command with winpty, like:
+
+     winpty docker exec -it health-diary_nodejs_1 sh -l
+
 If you changed some setting in docker-compose settings, use command `docker-compose up --build` to recreate containers with changes.
 
 To open symfony backend, try to open, for example, [http://localhost/admin/](http://localhost/admin/)

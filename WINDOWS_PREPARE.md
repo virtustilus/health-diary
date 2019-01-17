@@ -90,6 +90,8 @@ Now at the left you should to see this structure:
 
 After installation Docker might ask to enable Hyper-V, allow it to do and it will restart.
 
+Open docker settings from tray. Set memory to 5 GB and CPU to maximum your cores count.
+
 ### For previous Windows only (like windows 7, windows 8):
 
 Install last VirtualBox and Extension Pack [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
@@ -99,6 +101,7 @@ Download and install Docker toolbox:
 
 --- PLEASE HELP WITH DESCRIPTION FOR THESE OS, since I don't have win7 ---
 
+Open docker settings from tray. Set memory to 5 GB and CPU to maximum your cores count.
 
 
 
