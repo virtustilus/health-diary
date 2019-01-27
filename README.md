@@ -34,3 +34,29 @@ Paths that start with "/read/" are designed for landing pages.
 
 Checkout our wiki to find some tasks and additional useful information:
 [https://github.com/virtustilus/health-diary/wiki/Health-Diary-homepage](https://github.com/virtustilus/health-diary/wiki/Health-Diary-homepage)
+
+## creating database
+
+Since the main point of this README file is to learn these technologies and then start working on the project, we will create database manually.
+Connect to database container by 
+
+    docker exec -it health-diary_postgres_1 sh -l
+
+Then use client to work with postgres commands (password is `root`):
+
+    psql -U postgres -W
+
+And now list databases by `\list` command:
+
+    postgres=# \list
+
+Now create new database: `CREATE DATABASE health_diary`
+
+Then connect to PHP container (or open terminal with it, if you already have it open) and run:
+
+    composer install
+    php bin/console doctrine:migrations:migrate
+
+Now you have all tables created in database and you need test data:
+
+    

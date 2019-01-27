@@ -65,11 +65,19 @@ Install next extensions:
 - PHP IntelliSense
 - Twig Language 2
 - Gitlens
+- PHP Intelephense
+- Todo Highlighter
+- Rest Client
+- Pgsql
 
 Go to settings by CTRL+, and type "PHP". Now turn off the line: "PHP > Suggest:Basic".
 
 Click CTRL+P and type next words: ">display" and open Configure Display Language by click Enter.
 Now it has to have "en" as default locale set and save it (CTRL+S). Now restart VSCode fully.
+
+You can also use `PGSQL` plugin in VSCode, but you will need to manually install `psql` tool to be able to use pgsql plugin. (for example on OSX you can use `brew install postgresql` for that).
+For "pgsql" plugin you will also need to specify a row to connect.
+Open settings (CTRL+,) and search for "pgsql". Then in the field with connection line set next value: `postgres://postgres:root@127.0.0.1:5432/health_diary`
 
 Go to top left icon (Explorer) and click "Open Folder" button.
 Find and go inside Health-diary and click "Choose folder".
