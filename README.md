@@ -60,7 +60,9 @@ Then connect to PHP container (or open terminal with it, if you already have it 
 
     composer install
     php bin/console doctrine:migrations:migrate
+    php bin/console doctrine:fixtures:load
 
-Now you have all tables created in database and you need test data:
+Now you have all tables created in database and loaded first date into tables.
+
 
     

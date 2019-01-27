@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta name="description" content="{% block description %}{% endblock %}"/>
+        <meta property="og:description" content="{{ block('description') }}">
         {% block stylesheets %}{% endblock %}
     </head>
     <body>

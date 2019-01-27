@@ -29,11 +29,6 @@ class StaticPage
     /**
      * @ORM\Column(type="text")
      */
-    private $keywords;
-
-    /**
-     * @ORM\Column(type="text")
-     */
     private $body;
 
     /**
@@ -50,6 +45,11 @@ class StaticPage
      * @ORM\Column(type="boolean")
      */
     private $enabled;
+
+    /**
+     * @ORM\Column(type="string", length=100, nullable=true)
+     */
+    private $slug;
 
     public function getId(): ?int
     {
@@ -76,18 +76,6 @@ class StaticPage
     public function setDescription(string $description): self
     {
         $this->description = $description;
-
-        return $this;
-    }
-
-    public function getKeywords(): ?string
-    {
-        return $this->keywords;
-    }
-
-    public function setKeywords(string $keywords): self
-    {
-        $this->keywords = $keywords;
 
         return $this;
     }
@@ -136,6 +124,18 @@ class StaticPage
     public function setEnabled(bool $enabled): self
     {
         $this->enabled = $enabled;
+
+        return $this;
+    }
+
+    public function getSlug(): ?string
+    {
+        return $this->slug;
+    }
+
+    public function setSlug(string $slug): self
+    {
+        $this->slug = $slug;
 
         return $this;
     }
