@@ -9,3 +9,4 @@ EXPOSE 4200
 WORKDIR /var/www/frontend
 
 CMD [ "ng", "serve", "--host", "0.0.0.0", "--disable-host-check" ]
+#CMD [ "tail", "-f", "/dev/null" ]
