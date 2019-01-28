@@ -58,7 +58,7 @@ Open [https://code.visualstudio.com/](https://code.visualstudio.com/)
 Download, install and open it.
 At the left icons go to extensions (bottom one).
 
-Install next extensions:
+We recommend to install next extensions in VSCode:
 - Bookmarks
 - Docker
 - PHP Debug
@@ -68,7 +68,7 @@ Install next extensions:
 - PHP Intelephense
 - Todo Highlighter
 - Rest Client
-- Pgsql
+- compareit
 
 Go to settings by CTRL+, and type "PHP". Now turn off the line: "PHP > Suggest:Basic".
 
