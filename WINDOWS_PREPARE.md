@@ -66,11 +66,18 @@ We recommend to install next extensions in VSCode:
 - Twig Language 2
 - Gitlens
 - PHP Intelephense
-- Todo Highlighter
+- PHP Getters & Setters
+- Class Helper
+- Clipboard History
+- Todo Highlight
 - Rest Client
 - compareit
+- Angular Language Service
+- EditorConfig
 
 Go to settings by CTRL+, and type "PHP". Now turn off the line: "PHP > Suggest:Basic".
+
+Also find "explorer.autoReveal" and turn it off.
 
 Click CTRL+P and type next words: ">display" and open Configure Display Language by click Enter.
 Now it has to have "en" as default locale set and save it (CTRL+S). Now restart VSCode fully.
