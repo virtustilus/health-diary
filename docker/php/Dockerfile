@@ -18,7 +18,7 @@ RUN apk add --no-cache --update libzip-dev libzip \
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-COPY ./docker-php-ext-xdebug.ini /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+COPY ./zzz-docker-php-ext-xdebug.ini /usr/local/etc/php/conf.d/zzz-docker-php-ext-xdebug.ini
 COPY ./php.ini  /usr/local/etc/php/conf.d/php.ini
 COPY ./zzz-docker.conf /usr/local/etc/php-fpm.d/zzz-docker.conf
 

@@ -1,4 +1,4 @@
-FROM node:10-alpine
+FROM node:16-alpine
 
 RUN npm install -g @angular/cli
 
@@ -8,5 +8,7 @@ EXPOSE 4200
 
 WORKDIR /var/www/frontend
 
-CMD [ "ng", "serve", "--host", "0.0.0.0", "--disable-host-check" ]
+COPY run.sh /run.sh
+
+CMD [ "/bin/sh", "/run.sh" ]
 #CMD [ "tail", "-f", "/dev/null" ]
