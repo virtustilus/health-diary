@@ -2,14 +2,12 @@ FROM php:7-fpm-alpine
 
 RUN apk add --no-cache --update --virtual buildDeps autoconf gcc libc-dev build-base wget git grep
 
-RUN pecl install -o -f xdebug-2.7.0beta1 \
+RUN pecl install -o -f xdebug \
     &&  rm -rf /tmp/pear MonologBundle\
     &&  docker-php-ext-enable xdebug
 
 RUN apk add --no-cache --update postgresql-dev
 RUN docker-php-ext-install pdo pdo_pgsql
-
-RUN docker-php-ext-install mbstring
 
 RUN apk add --no-cache --update zlib zlib-dev icu icu-dev \
     && docker-php-ext-configure intl \
