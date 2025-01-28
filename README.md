@@ -64,5 +64,5 @@ Then connect to PHP container (or open terminal with it, if you already have it 
 
 Now you have all tables created in database and loaded first date into tables.
 
-
+- Updated security
     
